@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+  }
+
+body{
+    height:100vh;
+    color:#000555;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
