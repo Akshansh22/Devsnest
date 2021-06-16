@@ -1,13 +1,39 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
   }
 
 body{
-    height:100vh;
+    /* min-height: 100vh; */
     color:#000555;
-    font-family: 'Times New Roman', Times, serif;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.left,.right{
+  width: 49%;
+  display: inline-block;
+  text-align: left;
+  padding: 15px;
+}
+.left{
+  border-right: 2px solid royalblue;
+}
+.right{
+  border-left: 2px solid royalblue;
+}
+
+
+
+.container{
+  width: 500px;
+  
+}
+
+fieldset{
+  display: flex;
+  text-align: center;
 }
