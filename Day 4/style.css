@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Outer{
+    margin: auto;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    position: relative;
+    background-color: salmon;
+    border: solid 20px black;
+
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+.minute{
+    background-color: blue;
+    height: 5px;
+    width: 250px;
+    position: absolute;
+    top: 50%;
+}
+.hour{
+    background-color: blue;
+    height: 5px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(60deg);
+    transform-origin: right;
+    top: 50%;
+}
+.second{
+    background-color: blue;
+    height: 5px;
+    width: 250px;
+    position: absolute;
+    transform: rotate(-60deg);
+    transform-origin: right;
+    top: 50%;
+}
