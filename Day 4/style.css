@@ -31,7 +31,7 @@ body{
 }
 .hour{
     background-color: blue;
-    height: 5px;
+    height: 7px;
     width: 250px;
     position: absolute;
     transform: rotate(60deg);
