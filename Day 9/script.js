@@ -4,24 +4,40 @@ console.log(b);
 for(let x=0; x<400;x++) {
     b.innerHTML += '<div class="inner"></div>';
 }
+var clicked=0;
+var not_clicked=400;
 const boxes = document.querySelectorAll('.inner');
+
 boxes.forEach( (box)=>{
     box.addEventListener('click', ()=>{
         if(box.classList.contains('boxclicked')){
             box.classList.remove('boxclicked');
+            not_clicked+=1;
+            clicked-=1;
+            console.log(not_clicked,clicked);
         }
         else{
             box.classList.add('boxclicked');
+            clicked+=1;
+            not_clicked-=1;
+            console.log(not_clicked,clicked);
         }
+            // document.write(clicked);
+            // document.write(not_clicked);
+            document.getElementById("click").innerHTML = clicked;
+            document.getElementById("nclick").innerHTML = not_clicked;
+
+    // box.addEventListener('mouseover', ()=>{
+    //     if(box.classList.contains('boxclicked')){
+    //         // box.classList.remove('boxclicked');
+            
+    //     }
+    //     else{
+    //         box.classList.add('boxhover');
+            
+    //     }
+        
+        
     })
-})
-
-const defaultBlack = [
-    129, 130, 148, 149, 150, 151, 167, 168, 169, 170, 171, 172, 186, 187, 189,
-    190, 192, 193, 206, 207, 208, 209, 210, 211, 212, 213, 228, 231, 247, 249,
-    250, 252, 266, 268, 271, 273
-];
-
-defaultBlack.forEach( (index)=>{
-    boxes[index].classList.add('boxclicked');
+    
 })

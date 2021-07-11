@@ -8,7 +8,7 @@
     transform: translate(0,11%);
     margin: auto;
     /* height: 50vh; */
-    width: 50%;
+    width: 75%;
     /* padding: 1px; */
     display: grid; 
     grid-template-columns: repeat(20,1fr);
@@ -17,10 +17,14 @@
 .inner{
     height: 25px; 
     /* width: 50px; */
-    background-color:red;
+    background-color:burlywood;
     border: 1px solid black;
     /* box-sizing: border-box; */
 }
 .boxclicked{
-    background-color:black;
+    background-color:brown;
+}
+
+.boxhover{
+    background-color: cadetblue;
 }
