@@ -1,8 +1,8 @@
-const cards = document.querySelectorAll('.memory-card');
+const cards = document.querySelectorAll('.memory-card'); //Select all cards in the game
 
 let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard, secondCard;
+let lockBoard = false; //locking the board so that user cn not click before the current 2 open cards are closed
+let firstCard, secondCard; 
 
 function flipCard() {
   if (lockBoard) return;
