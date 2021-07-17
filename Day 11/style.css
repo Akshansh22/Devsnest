@@ -42,17 +42,20 @@ input{
     cursor: pointer;
 }
 #submit,.btn{
-    padding: 1 rem 3rem;
+    
     outline: none;
     font-size: 2rem;
     font-size: 400;
     display: block;
+    
+    padding: 1rem 3rem;
     margin: auto;
     text-transform: uppercase;
     border: none;
     color: #fff;
     background-color: skyblue;
     margin-top: 4rem ;
+    cursor: pointer;
 }
 #submit:hover{
     background-color: springgreen;
@@ -63,6 +66,22 @@ input{
     margin-top: 3rem;
     padding:3rem 4 rem;
     box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0,0, 0.4);
+}
+#showScore h3{
+    font-size: large;
+    text-align:center;
+}
+
+#showScore .btn{
+    margin-top: 2rem;
+    background-color: aquamarine;
+    color: black;
+}
+
+#showScore .btn:hover{
+    
+    background-color:green;
+    color: whitesmoke;
 }
 
 .scoreArea{
