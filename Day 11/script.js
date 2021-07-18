@@ -39,7 +39,7 @@ const quizDB=[
         ans:"ans1"
     }
 ];
-document.write("hello");
+
 const question=document.querySelector('.question');
 const opt1=document.querySelector('#opt1')
 const opt2=document.querySelector('#opt2')
