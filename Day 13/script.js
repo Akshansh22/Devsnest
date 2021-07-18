@@ -12,7 +12,7 @@ addToDoButton.addEventListener('click',function(){
         if(paragraph.style.textDecoration="none"){
             paragraph.style.textDecoration="line-through";}
         else{
-            paragraph.style.textDecoration="underline";
+            paragraph.style.textDecoration="none";
         }
     })
     paragraph.addEventListener('dblclick',function(){
@@ -21,3 +21,13 @@ addToDoButton.addEventListener('click',function(){
     })
 })
 
+fetch("https://api.chucknorris.io/jokes/random")
+
+.then((response)=>{
+    return response.json();
+})
+.then((data)=>{
+    var joke=data.value;
+    document.write("MEME: ",joke);
+})
+.catch();
