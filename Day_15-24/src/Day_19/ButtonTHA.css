@@ -1,0 +1,10 @@
+
+.content{
+    margin: auto;
+    background-color:bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50vh;
+    flex-direction: column;
+}
