@@ -5,7 +5,7 @@ function App19() {
 
   const [count,setCount]= useState(0);//different counts for
   const [count1,setCount1]= useState(0);//different buttons
-  const [count2,setCount2]= useState(0);
+  const [count2,setCount2]= useState(0);//Last one
 
   return (
     <div className="content">
